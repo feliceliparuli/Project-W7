@@ -38,11 +38,11 @@ const getVinyl = function () {
               class="card-img-top p-2"
               alt="${vinyl.name}"
             />
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <p class="card-text mb-1 text-muted">${vinyl.brand}</p>
-              <h5 class="card-title">${vinyl.name}</h5>
+              <h5 class="card-title flex-grow-1">${vinyl.name}</h5>
               <p class="card-text fw-bold">${vinyl.price}€</p>
-              <a href="./dettagli.html" class="btn btn-primary">Dettagli</a>
+              <a href="./dettagli.html?id=${vinyl._id}" class="btn btn-primary">Dettagli</a>
             </div>
           </div>
         `;
